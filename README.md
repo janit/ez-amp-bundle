@@ -79,7 +79,7 @@ The AMP version should also contain a canonical link back to the main version of
 <link rel="canonical" href="http://example.com/jared-leet-o" />
 ```
 
-With these links in place search engine crawlers will now find the AMP versions of your content.
+With these links in place search engine crawlers will now find the AMP versions of your content. If you did this in production then soon the Google mobile search results pages will start displaying links to your AMP versions.
 
 Next if you have not yet done so, verify your site on <a href="https://www.google.com/webmasters/">Google Webmaster tools</a> and follow the state of the AMP validation.
 
