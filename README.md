@@ -9,9 +9,26 @@ Given Google's continuing dominance search both publishers and CMS vendors need 
 
 Installation is similar to most Symfony Bundles:
 
-1. Require using composer
-2. Update AppKernel
-3. Add header link to content (to make AMP pages discoverable)
+### Require using composer
+
+```
+xx
+```
+
+bar
+
+### Update AppKernel
+
+```
+xx
+```
+
+foo
+
+### Add header link to content (to make AMP pages discoverable)
+
+
+## Verifyin installation
 
 After this your content pages' head section should contain a reference to the AMP version:
 
@@ -25,7 +42,11 @@ The AMP version should also contain a canonical link back to the main version of
 <link rel="canonical" href="http://example.com/jared-leto" />
 ```
 
-Next if you have not yet done so, verify your site on <a href="https://www.google.com/webmasters/">Google Webmaster tools</a> and follow the state of the AMP validation
+With these links in place search engine crawlers will now find the AMP versions of your content.
+
+Next if you have not yet done so, verify your site on <a href="https://www.google.com/webmasters/">Google Webmaster tools</a> and follow the state of the AMP validation.
+
+That's it!
 
 ## Overriding with bundle inheritance
 
