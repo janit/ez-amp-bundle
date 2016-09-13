@@ -49,7 +49,7 @@ To enable discovery, find your main layout template and enter the following snip
 
 ```
 	{% if content is defined %}
-		<link rel="amphtml" href="{{ url('ez-amp', {'objectId': content.versionInfo.contentInfo.id }) }}" />
+		<link rel="amphtml" href="{{ url('ez_amp', {'objectId': content.versionInfo.contentInfo.id }) }}" />
 	{% endif %}
 
 </head>
