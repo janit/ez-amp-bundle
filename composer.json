@@ -2,9 +2,7 @@
     "name": "janit/ez-amp-bundle",
     "description": "eZ Platform Bundle that provides Accelerated Mobile Pages (AMP) support",
     "type": "ezplatform-bundle",
-    "require": {
-        "ezsystems/ezpublish-kernel": "^6.5"
-    },
+    "require": {},
     "license": "MIT",
     "authors": [
         {

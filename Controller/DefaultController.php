@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/ez-amp/{objectId}")
+     * @Route("/ez-amp/{objectId}", name="ez_amp")
      * @Template("EzAmpBundle:amp:default.html.twig")
      */
     public function viewObjectAction($objectId)
