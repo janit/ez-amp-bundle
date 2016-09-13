@@ -70,7 +70,7 @@ To enable discovery, find your main layout template and enter the following snip
 
 This will allow the automatic discovery of your AMP versions by robots.
 
-## Verifying installation
+## Verifying installation and troubleshooting
 
 Open your browser and navigate to:
 
@@ -94,9 +94,19 @@ The AMP version should also contain a canonical link back to the main version of
 
 With these links in place search engine crawlers will now find the AMP versions of your content. If you did this in production then soon the Google mobile search results pages will start displaying links to your AMP versions.
 
-Next if you have not yet done so, verify your site on <a href="https://www.google.com/webmasters/">Google Webmaster tools</a> and follow the state of the AMP validation.
+Next if you have not yet done so, verify your site on <a href="https://www.google.com/webmasters/">Google Webmaster tools</a> and follow the state of the AMP validation. One of the errors you may encounter is failing images, because AMP does not allow use of the standard HTML `<img>` tag, but has it's own `<amp-img>` tag instead:
 
-That's it!
+```
+<amp-img
+	src="/var/site/storage/images/8/8/2/0/288-8-eng-GB/blog3.jpg"
+	alt=""
+	width="1840"
+	height="1232"
+	layout="responsive">
+</amp-img>
+```
+
+It is possible that in some cases this custom image tag template is not rendered. If this happens with regular templates or embedded templates, it's worth taking a look at competing `field_templates` definitions in your bundles/configurations.
 
 ## Overriding with bundle inheritance
 
