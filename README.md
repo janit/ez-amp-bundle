@@ -43,6 +43,19 @@ class AppKernel extends Kernel
 
 This will load and enable the eZ AMP Bundle in your installation when the application bootstraps.
 
+### Add routing
+
+Add the following to your app/config/routing.yml:
+
+```
+ez_amp:
+    resource: "@EzAmpBundle/Controller/"
+    type:     annotation
+    prefix:   /
+```
+
+This will load the routes that provide the custom AMP content generation.
+
 ### Add header link to content (to make AMP pages discoverable)
 
 To enable discovery, find your main layout template and enter the following snippet into the `head` section:
@@ -98,3 +111,7 @@ There are quite a few more things that should be added to the bundle, both on eZ
 - Support for JSON-LD metadata
 - Support for analytics
 - Support for ads
+
+## Disclaimer and License
+
+This is nothing but a hobby project. There may be updates or there may not be updates. There is no warranty whatsoever, but the code is made available under the MIT license so it is free for you to use and abuse.
