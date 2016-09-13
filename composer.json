@@ -3,6 +3,9 @@
     "description": "eZ Platform Bundle that provides Accelerated Mobile Pages (AMP) support",
     "type": "ezplatform-bundle",
     "require": {},
+    "autoload": {
+        "psr-4": { "Janit\\EzAmpBundle\\": "" }
+    },
     "license": "MIT",
     "authors": [
         {
