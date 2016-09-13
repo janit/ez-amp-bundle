@@ -59,10 +59,18 @@ This will allow the automatic discovery of your AMP versions by robots.
 
 ## Verifying installation
 
-After this your content pages' head section should contain a reference to the AMP version:
+Open your browser and navigate to:
 
 ```
-<link rel="amphtml" href="http://example.com/amp/1337" />
+http://example.com/ez-amp/1
+```
+
+This should display a simple version of your front page, with all the fields looped.
+
+After this verify your content pages' head section should contain a reference to the AMP version:
+
+```
+<link rel="amphtml" href="http://example.com/ez-amp/1337" />
 ```
 
 The AMP version should also contain a canonical link back to the main version of the site:
