@@ -16,13 +16,13 @@ Installation is similar to most Symfony Bundles:
 After this your content pages' head section should contain a reference to the AMP version:
 
 ```
-<link rel="amphtml" href="http://example/amp/1" />
+<link rel="amphtml" href="http://example.com/amp/1337" />
 ```
 
 The AMP version should also contain a canonical link back to the main version of the site:
 
 ```
-<link rel="canonical" href="http://symfony-cms.net/bolt-cms" />
+<link rel="canonical" href="http://example.com/jared-leto" />
 ```
 
 Next if you have not yet done so, verify your site on <a href="https://www.google.com/webmasters/">Google Webmaster tools</a> and follow the state of the AMP validation
