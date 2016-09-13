@@ -112,6 +112,6 @@ There are quite a few more things that should be added to the bundle, both on eZ
 - Support for analytics
 - Support for ads
 
-## Disclaimer and License
+## Disclaimer and Licensing
 
-This is nothing but a hobby project. There may be updates or there may not be updates. There is no warranty whatsoever, but the code is made available under the MIT license so it is free for you to use and abuse.
+This is nothing but a hobby project that is mostly an exercise. There may be updates or there may not be updates. There is no warranty whatsoever, but the code is made available under the MIT license so it is free for you to use and abuse.
