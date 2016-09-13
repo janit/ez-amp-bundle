@@ -35,8 +35,8 @@ While this bundle aims to provide valid AMP output by default, it is very crude 
 
 There are quite a few more things that should be added to the bundle, both on eZ Platform and AMP side, some of which are:
 
-- Configuration of templates
-- Configuration of content types to be served as AMP
+- Allow configuration of templates per content type
+- Allow configuration of content types to be served as AMP
 - Support for JSON-LD metadata
 - Support for analytics
 - Support for ads
