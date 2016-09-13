@@ -104,7 +104,7 @@ While this bundle aims to provide valid AMP output by default, it is very crude 
 
 ## Missing features
 
-There are quite a few more things that should be added to the bundle, both on eZ Platform and AMP side, some of which are:
+There are quite a few more things that should be added to the bundle to make it feature complete, both on eZ Platform and AMP side, some of which are:
 
 - Allow configuration of templates per content type
 - Allow configuration of content types to be served as AMP
