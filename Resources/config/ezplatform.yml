@@ -1,0 +1,4 @@
+system:
+    default:
+        field_templates:
+            - { template: EzAmpBundle:fields:ezimage_amp.html.twig, priority: 100 }

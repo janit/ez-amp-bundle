@@ -1,0 +1,24 @@
+{% extends "@EzPublishCore/content_fields.html.twig" %}
+
+{% block ezimage_field %}
+    {% spaceless %}
+
+        {#
+            Check global variable and either
+            render amp image or return parent
+            to minimize code duplication
+        #}
+
+        {% if is_ez_amp|default(false) %}
+            <amp-img
+                src="{{ field.value.uri }}"
+                alt="{{ field.value.alternativeText }}"
+                width="{{ field.value.width }}"
+                height="{{ field.value.height }}"
+                layout="responsive">
+            </amp-img>
+        {% else %}
+            {{ parent() }}
+        {% endif %}
+    {% endspaceless %}
+{% endblock %}

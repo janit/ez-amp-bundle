@@ -1,0 +1,11 @@
+{% extends 'EzAmpBundle:amp:pagelayout.html.twig' %}
+
+{% block content %}
+
+    <h1>{{ ez_content_name(content) }}</h1>
+
+    {% for key,field in content.fields %}
+        {{ ez_render_field(content,key, { "template": _self }) }}
+    {% endfor %}
+
+{% endblock %}
