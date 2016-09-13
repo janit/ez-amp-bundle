@@ -9,26 +9,55 @@ Given Google's continuing dominance search both publishers and CMS vendors need 
 
 Installation is similar to most Symfony Bundles:
 
-### Require using composer
+### Install using Composer
 
 ```
-xx
+composer require janit/ez-amp-bundle
 ```
 
-bar
+This will download and install the package to your local environment.
 
 ### Update AppKernel
 
-```
-xx
+Open the Application Kernel and add the bundle:
+
 ```
 
-foo
+<?php
+// app/AppKernel.php
+
+// ...
+class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = array(
+            // ...
+            new Janit\EzAmpBundle\EzAmpBundle(),
+        );
+    }
+
+    // ...
+}
+```
+
+This will load and enable the eZ AMP Bundle in your installation when the application bootstraps.
 
 ### Add header link to content (to make AMP pages discoverable)
 
+To enable discovery, find your main layout template and enter the following snippet into the `head` section:
 
-## Verifyin installation
+```
+	{% if content is defined %}
+		<link rel="amphtml" href="{{ url('ez-amp', {'objectId': content.versionInfo.contentInfo.id }) }}" />
+	{% endif %}
+
+</head>
+```
+
+This will allow the automatic discovery of your AMP versions by robots.
+
+## Verifying installation
 
 After this your content pages' head section should contain a reference to the AMP version:
 
@@ -39,7 +68,7 @@ After this your content pages' head section should contain a reference to the AM
 The AMP version should also contain a canonical link back to the main version of the site:
 
 ```
-<link rel="canonical" href="http://example.com/jared-leto" />
+<link rel="canonical" href="http://example.com/jared-leet-o" />
 ```
 
 With these links in place search engine crawlers will now find the AMP versions of your content.
