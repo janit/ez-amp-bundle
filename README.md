@@ -87,7 +87,7 @@ That's it!
 
 ## Overriding with bundle inheritance
 
-While this bundle aims to provide valid AMP output by default, it is very crude as it is. If you wish to use this version, you can use <a href="http://symfony.com/doc/current/bundles/inheritance.html">Symfony Bundle Inheritance</a> to override the templates to have a more pleasing outlook.
+While this bundle aims to provide valid AMP output by default, it is very crude as it is. If you wish to use this version, you can use <a href="http://symfony.com/doc/current/bundles/inheritance.html">Symfony Bundle Inheritance</a> to override the templates to have a more pleasing layout and likely extended features that your custom site will require.
 
 ## Missing features
 
