@@ -15,7 +15,7 @@ Installation is similar to most Symfony Bundles:
 composer require janit/ez-amp-bundle
 ```
 
-This will download and install the package to your local environment.
+This will download and install the package to your local environment form Packagist (<a href="https://packagist.org/packages/janit/ez-amp-bundle">ez-amp-bundle</a>)
 
 ### Update AppKernel
 
