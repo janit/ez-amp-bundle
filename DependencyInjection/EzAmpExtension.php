@@ -25,7 +25,7 @@ class EzAmpExtension extends Extension implements PrependExtensionInterface
 
     public function prepend(ContainerBuilder $container)
     {
-        $config = Yaml::parse( __DIR__ . '/../Resources/config/ezplatform.yml' );
+        $config = Yaml::parse( file_get_contents(__DIR__ . '/../Resources/config/ezplatform.yml') );
         $container->prependExtensionConfig( 'ezpublish', $config );
     }
 
